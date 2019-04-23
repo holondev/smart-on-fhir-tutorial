@@ -8,6 +8,7 @@
     }
 
     function onReady(smart)  {
+      $("#smartPayload").val(JSON.stringify(smart));
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
         var pt = patient.read();
